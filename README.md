@@ -1,20 +1,34 @@
 # Hi there, I'm Sanusi MB 👨‍💻
+## AI Fullstack Engineer | Building the Future with Code
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=AI+Fullstack+Engineer;Building+Tomorrow's+Solutions;Transforming+Ideas+into+Code" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=7c3aed&center=true&vCenter=true&width=800&lines=AI+Fullstack+Engineer;Remote+Work+Specialist;10k%2B+Users+Served;40%25+Efficiency+Improvement;Building+Tomorrow's+Solutions" alt="Typing SVG" />
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/💼%20Available%20for%20Remote%20Work-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/🌍%20Nigeria%20Based-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/⚡%20Quick%20Response-orange?style=for-the-badge" />
 </div>
 
 ## 🚀 About Me
 
 I'm a **Fullstack Engineer specializing in AI** with a passion for crafting innovative solutions that transform complex problems into elegant digital experiences. Currently serving as **Chief Technology Officer at Btaml Universe**, where I lead technical architecture and build systems for 10k+ users.
 
+<div align="center">
+  <img src="https://img.shields.io/badge/Experience-3%2B%20Years-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-AI%20%26%20Fullstack-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Remote-Available-brightgreen?style=for-the-badge" />
+</div>
+
+### 🎯 What I Bring to Your Team:
 - 🔭 **Currently working on**: AI-powered applications and scalable web platforms
-- 🌱 **Learning**: Advanced AI integration and system architecture optimization
-- 👯 **Looking to collaborate on**: Open-source AI projects and fullstack applications
-- 💬 **Ask me about**: Python, TypeScript, React, Next.js, AI/ML, and system design
-- 📫 **Reach me**: sanusimustapha387@gmail.com
-- 📍 **Location**: FCT Abuja, Nigeria (Available for remote work)
-- ⚡ **Fun fact**: I've improved data processing efficiency by 40% through innovative analytics solutions
+- 🌱 **Expertise in**: Advanced AI integration and system architecture optimization
+- 👯 **Proven track record**: Led systems serving 10k+ users, improved efficiency by 40%
+- 💬 **Technical leadership**: Python, TypeScript, React, Next.js, AI/ML, and system design
+- 📫 **Ready to connect**: sanusimustapha387@gmail.com
+- 📍 **Location**: FCT Abuja, Nigeria (Available for remote work worldwide)
+- ⚡ **Impact**: Built 27+ custom web applications with focus on performance and UX
 
 ## 🛠️ Tech Stack
 
@@ -52,15 +66,15 @@ I'm a **Fullstack Engineer specializing in AI** with a passion for crafting inno
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Digitalmustiii&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Digitalmustiii&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Digitalmustiii&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
 </div>
 
 ## 🎯 Expertise Areas
@@ -79,13 +93,13 @@ DevOps & Automation    ███████████████████
 ## 🚀 Featured Projects
 
 ### 🤖 AI-Powered Applications
-- **[Lytrana AI](https://github.com/digitalmustiii/lytrana)** - AI-powered data insights platform for CSV analysis with mobile-ready dashboards
-- **[Trainetic AI](https://github.com/Digitalmustiii/trainetic-ai)** - Fullstack AI fitness platform with personalized workout programs and intelligent coaching
-- **[SkillSnap](https://github.com/Digitalmustiii/skillsnap)** - AI web tool for generating professional thumbnails with customizable themes
+- **[Lytrana AI](https://github.com/YOUR_USERNAME/lytrana-ai)** - AI-powered data insights platform for CSV analysis with mobile-ready dashboards
+- **[Trainetic AI](https://github.com/YOUR_USERNAME/trainetic-ai)** - Fullstack AI fitness platform with personalized workout programs and intelligent coaching
+- **[SkillSnap](https://github.com/YOUR_USERNAME/skillsnap)** - AI web tool for generating professional thumbnails with customizable themes
 
 ### 🌐 Fullstack Web Applications
-- **[BTAML Universe](https://github.com/Digitalmustiii/btamluniverse)** - Unified digital platform for African news, business insights, and resources
-- **[Events Display System](https://github.com/Digitalmustiii/eventsdysplaysystem)** - Campus events platform with clean interface and real-time updates
+- **[BTAML Universe](https://github.com/YOUR_USERNAME/btaml-universe)** - Unified digital platform for African news, business insights, and resources
+- **[Events Display System](https://github.com/YOUR_USERNAME/events-system)** - Campus events platform with clean interface and real-time updates
 - **[Authentication System](https://github.com/YOUR_USERNAME/auth-system)** - Modern auth system with multiple OAuth providers
 
 ## 💼 Professional Experience
@@ -103,13 +117,13 @@ DevOps & Automation    ███████████████████
 ## 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Digitalmustiii&theme=tokyonight&no-frame=true&column=7" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=tokyonight&no-frame=true&column=7" alt="GitHub Trophies" />
 </div>
 
 ## 📈 Contribution Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Digitalmustiii&bg_color=1a1b27&color=628fdb&line=628fdb&point=628fdb&area=true&hide_border=true" alt="Contribution Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&bg_color=1a1b27&color=628fdb&line=628fdb&point=628fdb&area=true&hide_border=true" alt="Contribution Graph" />
 </div>
 
 ## 🤝 Let's Connect
@@ -118,13 +132,13 @@ DevOps & Automation    ███████████████████
   <a href="mailto:sanusimustapha387@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://linkedin.com/in//sbmustapha/">
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://x.com/digitalmustiii">
+  <a href="https://twitter.com/YOUR_TWITTER">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
-  <a href="https://discord.com/users/digitalmustiii">
+  <a href="https://discord.com/users/YOUR_DISCORD">
     <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
 </div>
@@ -140,11 +154,15 @@ DevOps & Automation    ███████████████████
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=for-the-badge&color=blue" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=Digitalmustiii&style=for-the-badge&color=7c3aed" alt="Profile Views" />
 </div>
 
 <div align="center">
-  <i>"Building tomorrow's solutions today"</i>
-  <br>
-  <i>Crafting digital experiences that make a difference</i>
+  <h3>💼 Open to Remote Opportunities</h3>
+  <p><i>"Building tomorrow's solutions today"</i></p>
+  <p><i>Crafting digital experiences that make a difference</i></p>
+  
+  <a href="mailto:sanusimustapha387@gmail.com">
+    <img src="https://img.shields.io/badge/Hire_Me-Available-brightgreen?style=for-the-badge&logo=handshake&logoColor=white" alt="Available for Hire" />
+  </a>
 </div>
