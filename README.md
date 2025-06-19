@@ -29,15 +29,17 @@ I'm a **Fullstack Engineer specializing in AI** with a passion for crafting inno
 - **Location**: FCT Abuja, Nigeria (Available for remote work worldwide)
 - **Impact**: Built 27+ custom web applications with focus on performance and UX
 
-## 🏆 Certifications & Training
-
+🏆 Certifications & Training
 <div align="center">
   <img src="https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white" alt="Coursera" />
   <img src="https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco" />
   <img src="https://img.shields.io/badge/NITDA-28a745?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K&logoColor=white" alt="NITDA" />
+  <img src="https://img.shields.io/badge/Google-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google" />
+  <img src="https://img.shields.io/badge/Meta-1877F2?style=for-the-badge&logo=meta&logoColor=white" alt="Meta" />
+  <img src="https://img.shields.io/badge/DeepLearning.AI-FF6F00?style=for-the-badge&logo=deeplearning.ai&logoColor=white" alt="DeepLearning.AI" />
+  <img src="https://img.shields.io/badge/IBM-052FAD?style=for-the-badge&logo=ibm&logoColor=white" alt="IBM" />
 </div>
-
-*Continuously advancing skills through industry-recognized certifications and professional development programs*
+Continuously advancing skills through industry-recognized certifications and professional development programs
 
 ## Tech Stack
 
