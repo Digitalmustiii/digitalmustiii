@@ -7,7 +7,6 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/💼%20Available%20for%20Remote%20Work-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/🌍%20Nigeria%20Based-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/⚡%20Quick%20Response-orange?style=for-the-badge" />
 </div>
 
