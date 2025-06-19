@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/⚡%20Quick%20Response-orange?style=for-the-badge" />
 </div>
 
-## 🚀 About Me
+## About Me
 
 I'm a **Fullstack Engineer specializing in AI** with a passion for crafting innovative solutions that transform complex problems into elegant digital experiences. Currently serving as **Chief Technology Officer at Btaml Universe**, where I lead technical architecture and build systems for 10k+ users.
 
@@ -21,16 +21,26 @@ I'm a **Fullstack Engineer specializing in AI** with a passion for crafting inno
   <img src="https://img.shields.io/badge/Remote-Available-brightgreen?style=for-the-badge" />
 </div>
 
-### 🎯 What I Bring to Your Team:
-- 🔭 **Currently working on**: AI-powered applications and scalable web platforms
-- 🌱 **Expertise in**: Advanced AI integration and system architecture optimization
-- 👯 **Proven track record**: Led systems serving 10k+ users, improved efficiency by 40%
-- 💬 **Technical leadership**: Python, TypeScript, React, Next.js, AI/ML, and system design
-- 📫 **Ready to connect**: sanusimustapha387@gmail.com
-- 📍 **Location**: FCT Abuja, Nigeria (Available for remote work worldwide)
-- ⚡ **Impact**: Built 27+ custom web applications with focus on performance and UX
+### What I Bring to Your Team:
+- **Currently working on**: AI-powered applications and scalable web platforms
+- **Expertise in**: Advanced AI integration and system architecture optimization
+- **Proven track record**: Led systems serving 10k+ users, improved efficiency by 40%
+- **Technical leadership**: Python, TypeScript, React, Next.js, AI/ML, and system design
+- **Ready to connect**: sanusimustapha387@gmail.com
+- **Location**: FCT Abuja, Nigeria (Available for remote work worldwide)
+- **Impact**: Built 27+ custom web applications with focus on performance and UX
 
-## 🛠️ Tech Stack
+## 🏆 Certifications & Training
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white" alt="Coursera" />
+  <img src="https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco" />
+  <img src="https://img.shields.io/badge/NITDA-28a745?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K&logoColor=white" alt="NITDA" />
+</div>
+
+*Continuously advancing skills through industry-recognized certifications and professional development programs*
+
+## Tech Stack
 
 ### Languages & Frameworks
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -77,7 +87,7 @@ I'm a **Fullstack Engineer specializing in AI** with a passion for crafting inno
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Digitalmustiii&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
 </div>
 
-## 🎯 Expertise Areas
+## Expertise Areas
 
 ```text
 AI Integration          ████████████████████████████████████████   92%
@@ -90,26 +100,26 @@ API Development        ███████████████████
 DevOps & Automation    ██████████████████████████████████████     68%
 ```
 
-## 🚀 Featured Projects
+## Featured Projects
 
-### 🤖 AI-Powered Applications
+### AI-Powered Applications
 - **[Lytrana AI](https://github.com/Digitalmustiii/lytrana)** - AI-powered data insights platform for CSV analysis with mobile-ready dashboards
 - **[Trainetic AI](https://github.com/Digitalmustiii/trainetic.ai)** - Fullstack AI fitness platform with personalized workout programs and intelligent coaching
 - **[SkillSnap](https://github.com/Digitalmustiii/skillsnap)** - AI web tool for generating professional thumbnails with customizable themes
 
-### 🌐 Fullstack Web Applications
+### Fullstack Web Applications
 - **[BTAML Universe](https://github.com/Digitalmustiii/btaml-universe)** - Unified digital platform for African news, business insights, and resources
 - **[Events Display System](https://github.com/Digitalmustiii/eventsdisplaysystem)** - Campus events platform with clean interface and real-time updates
 - **[Authentication System](https://github.com/Digitalmustiii/novaauthentication)** - Modern auth system with multiple OAuth providers
 
-## 💼 Professional Experience
+## Professional Experience
 
-**🚀 Chief Technology Officer** @ Btaml Universe *(Nov 2022 - Present)*
+**Chief Technology Officer** @ Btaml Universe *(Nov 2022 - Present)*
 - Led technical architecture for platform serving 10k+ users
 - Implemented scalable systems and microservices architecture
 - Drove AI integration initiatives and performance optimization
 
-**📊 Data Analyst** @ NITDA *(May 2023 – Dec 2023)*
+**Data Analyst** @ NITDA *(May 2023 – Dec 2023)*
 - Analyzed complex datasets and delivered actionable insights
 - Improved operational efficiency by 40% through data-driven solutions
 - Developed automated reporting systems and dashboards
@@ -123,10 +133,10 @@ DevOps & Automation    ███████████████████
 ## 📈 Contribution Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DigitalmustiiiE&bg_color=1a1b27&color=628fdb&line=628fdb&point=628fdb&area=true&hide_border=true" alt="Contribution Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Digitalmustiii&bg_color=1a1b27&color=628fdb&line=628fdb&point=628fdb&area=true&hide_border=true" alt="Contribution Graph" />
 </div>
 
-## 🤝 Let's Connect
+## Let's Connect
 
 <div align="center">
   <a href="mailto:sanusimustapha387@gmail.com">
@@ -143,13 +153,13 @@ DevOps & Automation    ███████████████████
   </a>
 </div>
 
-## 💡 Current Focus
+## Current Focus
 
-- 🔬 Exploring advanced AI integration patterns
-- 🏗️ Building scalable microservices architectures  
-- 📱 Developing progressive web applications
-- 🤖 Contributing to open-source AI/ML projects
-- 📊 Creating data visualization tools and dashboards
+- Exploring advanced AI integration patterns
+- Building scalable microservices architectures  
+- Developing progressive web applications
+- Contributing to open-source AI/ML projects
+- Creating data visualization tools and dashboards
 
 ---
 
