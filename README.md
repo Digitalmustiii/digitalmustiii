@@ -103,14 +103,20 @@ DevOps & Automation    ███████████████████
 ## Featured Projects
 
 ### AI-Powered Applications
-- **[Lytrana AI](https://github.com/Digitalmustiii/lytrana)** - AI-powered data insights platform for CSV analysis with mobile-ready dashboards
-- **[Trainetic AI](https://github.com/Digitalmustiii/trainetic.ai)** - Fullstack AI fitness platform with personalized workout programs and intelligent coaching
-- **[SkillSnap](https://github.com/Digitalmustiii/skillsnap)** - AI web tool for generating professional thumbnails with customizable themes
+- **[Lytrana AI](https://github.com/Digitalmustiii/lytrana){:target="_blank"}** - AI-powered data insights platform for CSV analysis with mobile-ready dashboards
+- **[Trainetic AI](https://github.com/Digitalmustiii/trainetic.ai){:target="_blank"}** - Fullstack AI fitness platform with personalized workout programs and intelligent coaching
+- **[SkillSnap](https://github.com/Digitalmustiii/skillsnap){:target="_blank"}** - AI web tool for generating professional thumbnails with customizable themes
 
 ### Fullstack Web Applications
-- **[BTAML Universe](https://github.com/Digitalmustiii/btaml-universe)** - Unified digital platform for African news, business insights, and resources
-- **[Events Display System](https://github.com/Digitalmustiii/eventsdisplaysystem)** - Campus events platform with clean interface and real-time updates
-- **[Authentication System](https://github.com/Digitalmustiii/novaauthentication)** - Modern auth system with multiple OAuth providers
+- **[BTAML Universe](https://github.com/Digitalmustiii/btaml-universe){:target="_blank"}** - Unified digital platform for African news, business insights, and resources
+- **[Events Display System](https://github.com/Digitalmustiii/eventsdisplaysystem){:target="_blank"}** - Campus events platform with clean interface and real-time updates
+- **[Authentication System](https://github.com/Digitalmustiii/novaauthentication){:target="_blank"}** - Modern auth system with multiple OAuth providers
+
+## Education
+
+**Bachelor's Degree in Software Engineering** *(2020 – 2024)*  
+**Al-Hikmah University**  
+Ilorin, Kwara State, Nigeria
 
 ## Professional Experience
 
@@ -139,16 +145,16 @@ DevOps & Automation    ███████████████████
 ## Let's Connect
 
 <div align="center">
-  <a href="mailto:sanusimustapha387@gmail.com">
+  <a href="mailto:sanusimustapha387@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://linkedin.com/in//sbmustapha/">
+  <a href="https://linkedin.com/in//sbmustapha/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://x.com/digitalmustiii">
+  <a href="https://x.com/digitalmustiii" target="_blank">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
-  <a href="https://discord.com/users/digitalmustiii">
+  <a href="https://discord.com/users/digitalmustiii" target="_blank">
     <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
 </div>
@@ -172,7 +178,7 @@ DevOps & Automation    ███████████████████
   <p><i>"Building tomorrow's solutions today"</i></p>
   <p><i>Crafting digital experiences that make a difference</i></p>
   
-  <a href="mailto:sanusimustapha387@gmail.com">
+  <a href="mailto:sanusimustapha387@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Hire_Me-Available-brightgreen?style=for-the-badge&logo=handshake&logoColor=white" alt="Available for Hire" />
   </a>
 </div>
