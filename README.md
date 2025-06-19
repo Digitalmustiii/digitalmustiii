@@ -94,7 +94,7 @@ DevOps & Automation    ███████████████████
 
 ### 🤖 AI-Powered Applications
 - **[Lytrana AI](https://github.com/Digitalmustiii/lytrana)** - AI-powered data insights platform for CSV analysis with mobile-ready dashboards
-- **[Trainetic AI](https://github.com/Digitalmustiii/traineticai)** - Fullstack AI fitness platform with personalized workout programs and intelligent coaching
+- **[Trainetic AI](https://github.com/Digitalmustiii/trainetic.ai)** - Fullstack AI fitness platform with personalized workout programs and intelligent coaching
 - **[SkillSnap](https://github.com/Digitalmustiii/skillsnap)** - AI web tool for generating professional thumbnails with customizable themes
 
 ### 🌐 Fullstack Web Applications
