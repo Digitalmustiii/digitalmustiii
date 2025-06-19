@@ -100,7 +100,7 @@ DevOps & Automation    ███████████████████
 ### 🌐 Fullstack Web Applications
 - **[BTAML Universe](https://github.com/Digitalmustiii/btaml-universe)** - Unified digital platform for African news, business insights, and resources
 - **[Events Display System](https://github.com/Digitalmustiii/eventsdisplaysystem)** - Campus events platform with clean interface and real-time updates
-- **[Authentication System](https://github.com/Digitalmustiii/authenticationsystem)** - Modern auth system with multiple OAuth providers
+- **[Authentication System](https://github.com/Digitalmustiii/novaauthentication)** - Modern auth system with multiple OAuth providers
 
 ## 💼 Professional Experience
 
