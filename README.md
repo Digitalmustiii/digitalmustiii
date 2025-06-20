@@ -127,14 +127,14 @@ DevOps & Automation    ███████████████████
 ## Featured Projects
 
 ### AI-Powered Applications
-- **[Lytrana AI](https://github.com/Digitalmustiii/lytrana){:target="_blank"}** - AI-powered data insights platform for CSV analysis with mobile-ready dashboards
-- **[Trainetic AI](https://github.com/Digitalmustiii/trainetic.ai){:target="_blank"}** - Fullstack AI fitness platform with personalized workout programs and intelligent coaching
-- **[SkillSnap](https://github.com/Digitalmustiii/skillsnap){:target="_blank"}** - AI web tool for generating professional thumbnails with customizable themes
+- **[Lytrana AI](https://github.com/Digitalmustiii/lytrana)** - AI-powered data insights platform for CSV analysis with mobile-ready dashboards
+- **[Trainetic AI](https://github.com/Digitalmustiii/trainetic.ai)** - Fullstack AI fitness platform with personalized workout programs and intelligent coaching
+- **[SkillSnap](https://github.com/Digitalmustiii/skillsnap)** - AI web tool for generating professional thumbnails with customizable themes
 
 ### Fullstack Web Applications
-- **[BTAML Universe](https://github.com/Digitalmustiii/btaml-universe){:target="_blank"}** - Unified digital platform for African news, business insights, and resources
-- **[Events Display System](https://github.com/Digitalmustiii/eventsdisplaysystem){:target="_blank"}** - Campus events platform with clean interface and real-time updates
-- **[Authentication System](https://github.com/Digitalmustiii/novaauthentication){:target="_blank"}** - Modern auth system with multiple OAuth providers
+- **[BTAML Universe](https://github.com/Digitalmustiii/btaml-universe)** - Unified digital platform for African news, business insights, and resources
+- **[Events Display System](https://github.com/Digitalmustiii/eventsdisplaysystem)** - Campus events platform with clean interface and real-time updates
+- **[Authentication System](https://github.com/Digitalmustiii/novaauthentication)** - Modern auth system with multiple OAuth providers
 
 ## Education
 
