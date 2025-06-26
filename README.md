@@ -1,8 +1,8 @@
 # Hi there, I'm Sanusi MB 👨‍💻
-## AI Fullstack Engineer | Building the Future with Code
+## AI, Fullstack Engineer | Building the Future with Code
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=7c3aed&center=true&vCenter=true&width=800&lines=AI+Fullstack+Engineer;Remote+Work+Specialist;10k%2B+Users+Served;40%25+Efficiency+Improvement;Building+Tomorrow's+Solutions" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=7c3aed&center=true&vCenter=true&width=800&lines=AI,+Fullstack+Engineer;Remote+Work+Specialist;10k%2B+Users+Served;40%25+Efficiency+Improvement;Building+Tomorrow's+Solutions" alt="Typing SVG" />
 </div>
 
 <div align="center">
