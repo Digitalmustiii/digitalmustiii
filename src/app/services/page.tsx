@@ -5,48 +5,49 @@ import { Code, Brain, Cpu, Database, Zap, GitBranch } from 'lucide-react';
 export default function Services() {
   const [showAll, setShowAll] = useState(false);
 
+  // UPDATED: Modern AI Engineering Services
   const services = [
     {
       icon: <Brain size={32} />,
-      title: 'AI Agent Development',
-      description: 'Build intelligent agents and LLM-powered systems that automate tasks, understand context, and make decisions. From chatbots to autonomous workflows.',
-      technologies: ['LLMs', 'Langchain', 'PyTorch', 'Hugging Face', 'Python'],
-      highlights: ['Autonomous Agents', 'Context-Aware Systems', 'Multi-Agent Orchestration']
+      title: 'LLM Integration & AI Agents',
+      description: 'Build production-ready AI agents with tool calling, function execution, and multi-step reasoning. OpenAI, Claude, DeepSeek integration with intelligent workflows.',
+      technologies: ['OpenAI API', 'Anthropic Claude', 'Tool Calling', 'AutoGen', 'CrewAI'],
+      highlights: ['Function/Tool Calling', 'Multi-Agent Systems', 'Autonomous Workflows']
+    },
+    {
+      icon: <Database size={32} />,
+      title: 'RAG Systems & Vector Search',
+      description: 'Advanced Retrieval-Augmented Generation with semantic search, hybrid retrieval, and citation tracking. Production-ready knowledge bases.',
+      technologies: ['LlamaIndex', 'pgvector', 'Supabase', 'OpenAI Embeddings', 'Pinecone'],
+      highlights: ['Semantic Search', 'Hybrid Retrieval', 'Citation Tracking']
     },
     {
       icon: <Cpu size={32} />,
       title: 'Edge & On-Device AI',
-      description: 'Deploy AI models on edge devices and hardware-constrained environments. Optimized inference for real-time, low-latency applications.',
-      technologies: ['ONNX', 'TensorRT', 'Edge Deployment', 'Model Optimization'],
-      highlights: ['Real-Time Inference', 'Hardware Optimization', 'Low-Latency Solutions']
+      description: 'Deploy optimized AI models on edge devices and hardware-constrained environments. Model quantization, ONNX conversion, and real-time inference.',
+      technologies: ['ONNX Runtime', 'TensorRT', 'OLLAMA', 'llama.cpp', 'Quantization'],
+      highlights: ['Real-Time Inference', 'Model Optimization', 'Edge Deployment']
     },
     {
       icon: <Code size={32} />,
-      title: 'AI-Powered Backend Systems',
-      description: 'Scalable backend architectures integrating AI capabilities. APIs, real-time processing, and intelligent data pipelines.',
-      technologies: ['Node.js', 'Python', 'PostgreSQL', 'Supabase', 'REST APIs'],
-      highlights: ['AI Integration', 'Real-Time Processing', 'Scalable Architecture']
+      title: 'Full-Stack AI Applications',
+      description: 'Modern Next.js applications with streaming AI responses, real-time updates, and production-grade architecture. Server Actions and React Server Components.',
+      technologies: ['Next.js 14+', 'Vercel AI SDK', 'React', 'TypeScript', 'shadcn/ui'],
+      highlights: ['Streaming Responses', 'Real-Time Updates', 'Production Architecture']
     },
     {
       icon: <Zap size={32} />,
-      title: 'Reinforcement Learning Systems',
-      description: 'Design and implement RL-based solutions for optimization, control systems, and decision-making applications.',
-      technologies: ['PyTorch', 'Reinforcement Learning', 'Simulation', 'Python'],
-      highlights: ['Policy Optimization', 'Multi-Agent RL', 'Simulation Environments']
-    },
-    {
-      icon: <Database size={32} />,
-      title: 'Embedded Systems & IoT',
-      description: 'Development for embedded systems and IoT devices. Hardware-aware software design and edge computing solutions.',
-      technologies: ['Embedded Systems', 'Edge Computing', 'Hardware Integration', 'Real-Time OS'],
-      highlights: ['Low-Level Programming', 'Hardware Integration', 'Resource Optimization']
+      title: 'Model Fine-Tuning & Optimization',
+      description: 'Parameter-efficient fine-tuning with LoRA/QLoRA. Custom models for specific domains with dataset creation and evaluation.',
+      technologies: ['PyTorch', 'Hugging Face', 'LoRA/QLoRA', 'Unsloth', 'vLLM'],
+      highlights: ['Custom Model Training', 'Dataset Creation', 'Performance Optimization']
     },
     {
       icon: <GitBranch size={32} />,
-      title: 'DevOps for AI Deployment',
-      description: 'CI/CD pipelines for AI models. Automated testing, deployment, and monitoring for on-premise and edge AI systems.',
-      technologies: ['Docker', 'CI/CD', 'Model Monitoring', 'DevOps', 'Git'],
-      highlights: ['Automated Deployment', 'Model Versioning', 'Infrastructure as Code']
+      title: 'DevOps & AI System Monitoring',
+      description: 'CI/CD pipelines for AI models. Automated deployment, cost tracking, observability, and production monitoring for AI systems.',
+      technologies: ['Docker', 'GitHub Actions', 'Prometheus', 'Redis', 'API Monitoring'],
+      highlights: ['Automated Deployment', 'Cost Tracking', 'System Observability']
     }
   ];
 
@@ -64,17 +65,15 @@ export default function Services() {
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-3 mb-6">
             <h2 className="text-5xl md:text-5xl font-bold text-[#F2B47E] relative inline-block">
-              What I <span className='text-white'>
-                Offer
-              </span>
+              What I <span className='text-white'>Offer</span>
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-[#F2B47E]/30 rounded-full"></span>
             </h2>
           </div>
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              Specialized <span className="text-[#F2B47E] font-semibold">AI solutions</span> and intelligent systems. 
-              From edge deployment to <span className="text-[#F2B47E] font-semibold">autonomous agents</span>.
+              Production-ready <span className="text-[#F2B47E] font-semibold">AI engineering</span> services. 
+              From <span className="text-[#F2B47E] font-semibold">intelligent agents</span> to full-stack deployment.
             </p>
           </div>
         </div>

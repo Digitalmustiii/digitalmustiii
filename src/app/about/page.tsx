@@ -23,7 +23,6 @@ interface TabItem {
 export default function AboutPage() {
   const [activeTab, setActiveTab] = useState<string>('skills');
 
-  // Memoize static data to prevent recreation on every render
   const tabs: TabItem[] = useMemo(() => [
     { id: 'skills', label: 'Skills' },
     { id: 'experience', label: 'Experience' },
@@ -47,32 +46,51 @@ export default function AboutPage() {
     }
   ], []);
 
-  // Flatten all skills into one array - Updated to align with AI research focus
+  // UPDATED: Modern AI Engineering Stack (removed outdated tools, added modern ones)
   const allSkills: string[] = useMemo(() => [
-    'Python', 'TypeScript', 'Node.js', 'PostgreSQL', 'Supabase', 'PyTorch', 
-    'TensorFlow', 'Langchain', 'Hugging Face', 'LLM Integration', 'AI Agents',
-    'Reinforcement Learning', 'On-Device Inference', 'Edge Deployment', 'ONNX',
-    'TensorRT', 'Embedded Systems', 'CI/CD', 'DevOps', 'Docker', 'Git', 
-    'REST APIs', 'Real-time Systems', 'Hardware-Aware Computing'
+    // Core Languages
+    'Python', 'TypeScript', 'Node.js', 
+    
+    // LLM & AI
+    'OpenAI API', 'Anthropic Claude', 'DeepSeek', 'Tool/Function Calling',
+    'LlamaIndex', 'RAG Systems', 'Prompt Engineering', 'Structured Outputs',
+    
+    // ML & Deep Learning
+    'PyTorch', 'TensorFlow', 'Hugging Face', 'Fine-tuning (LoRA/QLoRA)',
+    
+    // AI Agents (Updated)
+    'OpenAI Assistants', 'AutoGen', 'CrewAI', 'Multi-Agent Systems',
+    
+    // Edge & Optimization
+    'ONNX Runtime', 'TensorRT', 'Model Quantization', 'On-Device Inference',
+    'OLLAMA', 'llama.cpp', 'Edge Deployment',
+    
+    // Backend & Databases
+    'PostgreSQL', 'Supabase', 'pgvector', 'Redis', 'REST APIs',
+    
+    // Frontend & Full-Stack
+    'Next.js 14+', 'React', 'Vercel AI SDK', 'Real-time Systems', 'shadcn/ui',
+    
+    // DevOps & Deployment
+    'Docker', 'CI/CD', 'GitHub Actions', 'Git', 'Monitoring & Observability'
   ], []);
 
+  // UPDATED: Modern engineering competencies
   const engineeringSkills: SkillItem[] = useMemo(() => [
-    { skill: 'AI Agents & LLM Systems', level: 92 },
-    { skill: 'On-Device & Edge Inference', level: 85 },
-    { skill: 'Reinforcement Learning', level: 80 },
-    { skill: 'Embedded Systems Development', level: 78 },
-    { skill: 'DevOps for AI Deployment', level: 88 },
-    { skill: 'Backend System Architecture', level: 90 },
-    { skill: 'Real-time Systems Integration', level: 85 },
-    { skill: 'Hardware-Aware Optimization', level: 82 }
+    { skill: 'LLM Integration & Tool Calling', level: 92 },
+    { skill: 'RAG Systems & Vector Search', level: 88 },
+    { skill: 'AI Agent Development', level: 90 },
+    { skill: 'On-Device & Edge AI', level: 85 },
+    { skill: 'Production Full-Stack (Next.js + AI)', level: 88 },
+    { skill: 'Model Optimization & Quantization', level: 82 },
+    { skill: 'DevOps for AI Systems', level: 85 },
+    { skill: 'Real-time AI Applications', level: 87 }
   ], []);
 
-  // Memoize tab change handler
   const handleTabChange = useCallback((tabId: string) => {
     setActiveTab(tabId);
   }, []);
 
-  // Memoized progress bar component
   const ProgressBar = useMemo(() => {
     const Component = ({ skill, level }: { skill: string; level: number }) => (
       <div className="group">
@@ -92,7 +110,6 @@ export default function AboutPage() {
     return Component;
   }, []);
 
-  // Memoized experience card component
   const ExperienceCard = useMemo(() => {
     const Component = ({ exp }: { exp: Experience }) => (
       <div className="relative group">
@@ -128,7 +145,6 @@ export default function AboutPage() {
 
   return (
     <section id="about" className="py-8 relative overflow-hidden">
-      {/* Background Elements - Reduced opacity for better performance */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/3 via-transparent to-orange-900/3" />
       <div className="absolute top-20 left-10 w-72 h-72 bg-[#F2B47E]/8 rounded-full blur-2xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/8 rounded-full blur-2xl" />
@@ -145,17 +161,15 @@ export default function AboutPage() {
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              I craft <span className="text-[#F2B47E] font-semibold">innovative solutions</span> that transform complex problems into 
-              <span className="text-[#F2B47E] font-semibold"> elegant digital experiences</span>. 
-              Building the future, one line of code at a time.
+              I build <span className="text-[#F2B47E] font-semibold">production AI systems</span> that solve real problems. 
+              From <span className="text-[#F2B47E] font-semibold">intelligent agents</span> to edge deployment.
             </p>
           </div>
         </div>
         
-        {/* Single Column Layout for 3 Tabs */}
         <div className="max-w-6xl mx-auto mt-16">
           <div className="bg-black/40 backdrop-blur-xl border border-gray-800/50 rounded-2xl overflow-hidden shadow-2xl">
-            {/* Enhanced Tabs */}
+            {/* Tabs */}
             <div className="border-b border-gray-800/50 bg-black/20">
               <div className="flex">
                 {tabs.map(tab => (
@@ -187,7 +201,7 @@ export default function AboutPage() {
               {/* Skills Tab */}
               {activeTab === 'skills' && (
                 <div id="skills-panel" role="tabpanel" className="space-y-10 animate-fadeIn">
-                  {/* Technical Skills - Unified Layout with Mobile Optimization */}
+                  {/* Technical Skills */}
                   <div>
                     <h4 className="text-2xl font-bold mb-6 text-white flex items-center gap-3">
                       Technical Skills
@@ -204,7 +218,7 @@ export default function AboutPage() {
                     </div>
                   </div>
 
-                  {/* Engineering Skills with Progress */}
+                  {/* Engineering Skills */}
                   <div>
                     <h4 className="text-2xl font-bold mb-6 text-white flex items-center gap-3">
                       Engineering Excellence
