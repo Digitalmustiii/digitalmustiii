@@ -23,69 +23,110 @@ interface TabItem {
 export default function AboutPage() {
   const [activeTab, setActiveTab] = useState<string>('skills');
 
-  const tabs: TabItem[] = useMemo(() => [
-    { id: 'skills', label: 'Skills' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'education', label: 'Education' }
-  ], []);
+  const tabs: TabItem[] = useMemo(
+    () => [
+      { id: 'skills', label: 'Skills' },
+      { id: 'experience', label: 'Experience' },
+      { id: 'education', label: 'Education' },
+    ],
+    []
+  );
 
-  const experiences: Experience[] = useMemo(() => [
-    {
-      title: 'Data Analyst',
-      company: 'NITDA',
-      period: 'May 2023 – Dec 2023',
-      type: 'Internship',
-      achievements: ['Analyzed complex datasets', 'Improved efficiency by 40%']
-    },
-    {
-      title: 'Chief Technology Officer',
-      company: 'Btaml Universe',
-      period: 'Nov 2022 - Present',
-      type: 'Full-time',
-      achievements: ['Led technical architecture', 'Built systems for 10k+ users']
-    }
-  ], []);
+  const experiences: Experience[] = useMemo(
+    () => [
+      {
+        title: 'Data Analyst',
+        company: 'NITDA',
+        period: 'May 2023 – Dec 2023',
+        type: 'Internship',
+        achievements: ['Analyzed complex datasets', 'Improved efficiency by 40%'],
+      },
+      {
+        title: 'Chief Technology Officer',
+        company: 'Btaml Universe',
+        period: 'Nov 2022 - Present',
+        type: 'Full-time',
+        achievements: ['Led technical architecture', 'Built systems for 10k+ users'],
+      },
+    ],
+    []
+  );
 
-  // UPDATED: Modern AI Engineering Stack (removed outdated tools, added modern ones)
-  const allSkills: string[] = useMemo(() => [
-    // Core Languages
-    'Python', 'TypeScript', 'Node.js', 
-    
-    // LLM & AI
-    'OpenAI API', 'Anthropic Claude', 'DeepSeek', 'Tool/Function Calling',
-    'LlamaIndex', 'RAG Systems', 'Prompt Engineering', 'Structured Outputs',
-    
-    // ML & Deep Learning
-    'PyTorch', 'TensorFlow', 'Hugging Face', 'Fine-tuning (LoRA/QLoRA)',
-    
-    // AI Agents (Updated)
-    'OpenAI Assistants', 'AutoGen', 'CrewAI', 'Multi-Agent Systems',
-    
-    // Edge & Optimization
-    'ONNX Runtime', 'TensorRT', 'Model Quantization', 'On-Device Inference',
-    'OLLAMA', 'llama.cpp', 'Edge Deployment',
-    
-    // Backend & Databases
-    'PostgreSQL', 'Supabase', 'pgvector', 'Redis', 'REST APIs',
-    
-    // Frontend & Full-Stack
-    'Next.js 14+', 'React', 'Vercel AI SDK', 'Real-time Systems', 'shadcn/ui',
-    
-    // DevOps & Deployment
-    'Docker', 'CI/CD', 'GitHub Actions', 'Git', 'Monitoring & Observability'
-  ], []);
+  const allSkills: string[] = useMemo(
+    () => [
+      // Core Languages
+      'Python',
+      'TypeScript',
+      'Node.js',
 
-  // UPDATED: Modern engineering competencies
-  const engineeringSkills: SkillItem[] = useMemo(() => [
-    { skill: 'LLM Integration & Tool Calling', level: 92 },
-    { skill: 'RAG Systems & Vector Search', level: 88 },
-    { skill: 'AI Agent Development', level: 90 },
-    { skill: 'On-Device & Edge AI', level: 85 },
-    { skill: 'Production Full-Stack (Next.js + AI)', level: 88 },
-    { skill: 'Model Optimization & Quantization', level: 82 },
-    { skill: 'DevOps for AI Systems', level: 85 },
-    { skill: 'Real-time AI Applications', level: 87 }
-  ], []);
+      // LLM & AI
+      'OpenAI API',
+      'Anthropic Claude',
+      'DeepSeek',
+      'Tool/Function Calling',
+      'LlamaIndex',
+      'RAG Systems',
+      'Prompt Engineering',
+      'Structured Outputs',
+
+      // ML & Deep Learning
+      'PyTorch',
+      'TensorFlow',
+      'Hugging Face',
+      'Fine-tuning (LoRA/QLoRA)',
+
+      // AI Agents
+      'OpenAI Assistants',
+      'AutoGen',
+      'CrewAI',
+      'Multi-Agent Systems',
+
+      // Edge & Optimization
+      'ONNX Runtime',
+      'TensorRT',
+      'Model Quantization',
+      'On-Device Inference',
+      'OLLAMA',
+      'llama.cpp',
+      'Edge Deployment',
+
+      // Backend & Databases
+      'PostgreSQL',
+      'Supabase',
+      'pgvector',
+      'Redis',
+      'REST APIs',
+
+      // Frontend & Full-Stack
+      'Next.js 14+',
+      'React',
+      'Vercel AI SDK',
+      'Real-time Systems',
+      'shadcn/ui',
+
+      // DevOps & Deployment
+      'Docker',
+      'CI/CD',
+      'GitHub Actions',
+      'Git',
+      'Monitoring & Observability',
+    ],
+    []
+  );
+
+  const engineeringSkills: SkillItem[] = useMemo(
+    () => [
+      { skill: 'LLM Integration & Tool Calling', level: 92 },
+      { skill: 'RAG Systems & Vector Search', level: 88 },
+      { skill: 'AI Agent Development', level: 90 },
+      { skill: 'On-Device & Edge AI', level: 85 },
+      { skill: 'Production Full-Stack (Next.js + AI)', level: 88 },
+      { skill: 'Model Optimization & Quantization', level: 82 },
+      { skill: 'DevOps for AI Systems', level: 85 },
+      { skill: 'Real-time AI Applications', level: 87 },
+    ],
+    []
+  );
 
   const handleTabChange = useCallback((tabId: string) => {
     setActiveTab(tabId);
@@ -99,7 +140,7 @@ export default function AboutPage() {
           <span className="text-[#F2B47E] text-sm font-bold">{level}%</span>
         </div>
         <div className="w-full bg-gray-800/50 rounded-full h-2 overflow-hidden">
-          <div 
+          <div
             className="h-full bg-[#F2B47E] rounded-full transition-all duration-1000 ease-out"
             style={{ width: `${level}%` }}
           />
@@ -114,7 +155,7 @@ export default function AboutPage() {
     const Component = ({ exp }: { exp: Experience }) => (
       <div className="relative group">
         <div className="absolute left-4 top-3 w-4 h-4 rounded-full bg-[#F2B47E] shadow-lg shadow-[#F2B47E]/20 transition-transform duration-300 z-10" />
-        
+
         <div className="ml-12 p-6 bg-gradient-to-br from-black/30 to-gray-900/30 rounded-xl border border-gray-800/30 hover:border-[#F2B47E]/30 transition-all duration-300">
           <div className="flex flex-wrap gap-2 mb-4">
             <span className="px-3 py-1 text-xs font-medium bg-[#F2B47E]/10 text-[#F2B47E] rounded-full">
@@ -124,10 +165,10 @@ export default function AboutPage() {
               {exp.type}
             </span>
           </div>
-          
+
           <h4 className="text-lg font-bold text-white mb-2 leading-tight">{exp.title}</h4>
           <p className="text-gray-300 font-medium mb-4">{exp.company}</p>
-          
+
           <div className="space-y-2">
             {exp.achievements.map((achievement, i) => (
               <div key={i} className="flex items-start gap-2">
@@ -144,42 +185,49 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <section id="about" className="py-8 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/3 via-transparent to-orange-900/3" />
+    <section
+      id="about"
+      className="py-8 relative overflow-hidden min-h-screen bg-gradient-to-br from-[#020617] via-[#050308] to-[#1f2937]"
+    >
+      {/* soft blobs on top of gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-transparent to-orange-900/10" />
       <div className="absolute top-20 left-10 w-72 h-72 bg-[#F2B47E]/8 rounded-full blur-2xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/8 rounded-full blur-2xl" />
-      
+
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-3 mb-6">
             <h2 className="text-5xl md:text-5xl font-bold text-[#F2B47E] relative inline-block">
-              About <span className='text-white'>Me</span> 
+              About <span className="text-white">Me</span>
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-[#F2B47E]/30 rounded-full" />
             </h2>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              I build <span className="text-[#F2B47E] font-semibold">production AI systems</span> that solve real problems. 
-              From <span className="text-[#F2B47E] font-semibold">intelligent agents</span> to edge deployment.
+              I build <span className="text-[#F2B47E] font-semibold">production AI systems</span> that
+              solve real problems. From <span className="text-[#F2B47E] font-semibold">intelligent agents</span> to
+              edge deployment.
             </p>
           </div>
         </div>
-        
+
         <div className="max-w-6xl mx-auto mt-16">
           <div className="bg-black/40 backdrop-blur-xl border border-gray-800/50 rounded-2xl overflow-hidden shadow-2xl">
             {/* Tabs */}
             <div className="border-b border-gray-800/50 bg-black/20">
               <div className="flex">
-                {tabs.map(tab => (
+                {tabs.map((tab) => (
                   <button
                     key={tab.id}
                     onClick={() => handleTabChange(tab.id)}
                     className={`flex-1 py-6 px-4 md:px-8 font-semibold transition-all duration-300 relative group
-                      ${activeTab === tab.id 
-                        ? 'text-[#F2B47E] bg-black/30' 
-                        : 'text-gray-400 hover:text-gray-200 hover:bg-black/10'}`}
+                      ${
+                        activeTab === tab.id
+                          ? 'text-[#F2B47E] bg-black/30'
+                          : 'text-gray-400 hover:text-gray-200 hover:bg-black/10'
+                      }`}
                     type="button"
                     role="tab"
                     aria-selected={activeTab === tab.id}
@@ -195,7 +243,7 @@ export default function AboutPage() {
                 ))}
               </div>
             </div>
-            
+
             {/* Tab Content */}
             <div className="p-6 md:p-8">
               {/* Skills Tab */}
@@ -208,8 +256,8 @@ export default function AboutPage() {
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
                       {allSkills.map((skill) => (
-                        <span 
-                          key={skill} 
+                        <span
+                          key={skill}
                           className="px-3 py-2 md:px-4 md:py-2 bg-gradient-to-r from-black/60 to-gray-900/60 border border-gray-700/50 rounded-xl text-xs md:text-sm font-medium text-gray-200 backdrop-blur-sm hover:border-[#F2B47E]/50 hover:bg-gradient-to-r hover:from-[#F2B47E]/10 hover:to-orange-500/10 transition-all duration-300"
                         >
                           {skill}
@@ -231,34 +279,34 @@ export default function AboutPage() {
                   </div>
                 </div>
               )}
-              
+
               {/* Experience Tab */}
               {activeTab === 'experience' && (
                 <div id="experience-panel" role="tabpanel" className="animate-fadeIn">
                   <div className="flex items-center gap-3 mb-8">
                     <h3 className="text-2xl font-bold text-white">Work Experience</h3>
                   </div>
-                  
+
                   <div className="space-y-8 relative">
                     <div className="absolute left-6 top-4 bottom-0 w-0.5 bg-[#F2B47E]/50" />
-                    
+
                     {experiences.map((exp, index) => (
                       <ExperienceCard key={index} exp={exp} />
                     ))}
                   </div>
                 </div>
               )}
-              
+
               {/* Education Tab */}
               {activeTab === 'education' && (
                 <div id="education-panel" role="tabpanel" className="animate-fadeIn">
                   <div className="flex items-center gap-3 mb-8">
                     <h3 className="text-2xl font-bold text-white">Education</h3>
                   </div>
-                  
+
                   <div className="relative">
                     <div className="absolute left-6 top-8 bottom-0 w-0.5 bg-gradient-to-b from-[#F2B47E] to-transparent" />
-                    
+
                     <div className="space-y-12">
                       <div className="relative group">
                         <div className="absolute left-4 top-2 w-4 h-4 rounded-full bg-[#F2B47E] shadow-lg shadow-[#F2B47E]/20 transition-transform duration-300" />
@@ -271,10 +319,16 @@ export default function AboutPage() {
                               Master&apos;s Degree
                             </div>
                           </div>
-                          <h4 className="text-xl font-bold text-white mb-2">MSc in Computer Science and Engineering</h4>
-                          <p className="text-lg text-gray-300 mb-1">University of Electronic Science and Technology of China (UESTC)</p>
+                          <h4 className="text-xl font-bold text-white mb-2">
+                            MSc in Computer Science and Engineering
+                          </h4>
+                          <p className="text-lg text-gray-300 mb-1">
+                            University of Electronic Science and Technology of China (UESTC)
+                          </p>
                           <p className="text-gray-400 mb-2">Chengdu, China</p>
-                          <p className="text-sm text-[#F2B47E]/80 font-medium">Research Focus: Artificial Intelligence</p>
+                          <p className="text-sm text-[#F2B47E]/80 font-medium">
+                            Research Focus: Artificial Intelligence
+                          </p>
                         </div>
                       </div>
 
@@ -289,12 +343,14 @@ export default function AboutPage() {
                               Bachelor&apos;s Degree
                             </div>
                           </div>
-                          <h4 className="text-xl font-bold text-white mb-2">B.Sc. in Software Engineering</h4>
+                          <h4 className="text-xl font-bold text-white mb-2">
+                            B.Sc. in Software Engineering
+                          </h4>
                           <p className="text-lg text-gray-300 mb-1">Al-Hikmah University</p>
                           <p className="text-gray-400">Ilorin, Kwara State, Nigeria</p>
                         </div>
                       </div>
-                      
+
                       <div className="relative group">
                         <div className="absolute left-4 top-2 w-4 h-4 rounded-full bg-[#F2B47E]/60 shadow-lg shadow-[#F2B47E]/10 transition-transform duration-300" />
                         <div className="ml-12 p-6 bg-gradient-to-br from-black/20 to-gray-900/20 rounded-xl border border-gray-800/30 hover:border-[#F2B47E]/30 transition-all duration-300">
@@ -319,12 +375,12 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      
+
       <style jsx>{`
         .animate-fadeIn {
           animation: fadeIn 0.4s ease-in-out;
         }
-        
+
         @keyframes fadeIn {
           from {
             opacity: 0;

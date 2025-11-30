@@ -5,75 +5,84 @@ import { Code, Brain, Cpu, Database, Zap, GitBranch } from 'lucide-react';
 export default function Services() {
   const [showAll, setShowAll] = useState(false);
 
-  // UPDATED: Modern AI Engineering Services
   const services = [
     {
       icon: <Brain size={32} />,
       title: 'LLM Integration & AI Agents',
-      description: 'Build production-ready AI agents with tool calling, function execution, and multi-step reasoning. OpenAI, Claude, DeepSeek integration with intelligent workflows.',
+      description:
+        'Build production-ready AI agents with tool calling, function execution, and multi-step reasoning. OpenAI, Claude, DeepSeek integration with intelligent workflows.',
       technologies: ['OpenAI API', 'Anthropic Claude', 'Tool Calling', 'AutoGen', 'CrewAI'],
-      highlights: ['Function/Tool Calling', 'Multi-Agent Systems', 'Autonomous Workflows']
+      highlights: ['Function/Tool Calling', 'Multi-Agent Systems', 'Autonomous Workflows'],
     },
     {
       icon: <Database size={32} />,
       title: 'RAG Systems & Vector Search',
-      description: 'Advanced Retrieval-Augmented Generation with semantic search, hybrid retrieval, and citation tracking. Production-ready knowledge bases.',
+      description:
+        'Advanced Retrieval-Augmented Generation with semantic search, hybrid retrieval, and citation tracking. Production-ready knowledge bases.',
       technologies: ['LlamaIndex', 'pgvector', 'Supabase', 'OpenAI Embeddings', 'Pinecone'],
-      highlights: ['Semantic Search', 'Hybrid Retrieval', 'Citation Tracking']
+      highlights: ['Semantic Search', 'Hybrid Retrieval', 'Citation Tracking'],
     },
     {
       icon: <Cpu size={32} />,
       title: 'Edge & On-Device AI',
-      description: 'Deploy optimized AI models on edge devices and hardware-constrained environments. Model quantization, ONNX conversion, and real-time inference.',
+      description:
+        'Deploy optimized AI models on edge devices and hardware-constrained environments. Model quantization, ONNX conversion, and real-time inference.',
       technologies: ['ONNX Runtime', 'TensorRT', 'OLLAMA', 'llama.cpp', 'Quantization'],
-      highlights: ['Real-Time Inference', 'Model Optimization', 'Edge Deployment']
+      highlights: ['Real-Time Inference', 'Model Optimization', 'Edge Deployment'],
     },
     {
       icon: <Code size={32} />,
       title: 'Full-Stack AI Applications',
-      description: 'Modern Next.js applications with streaming AI responses, real-time updates, and production-grade architecture. Server Actions and React Server Components.',
+      description:
+        'Modern Next.js applications with streaming AI responses, real-time updates, and production-grade architecture. Server Actions and React Server Components.',
       technologies: ['Next.js 14+', 'Vercel AI SDK', 'React', 'TypeScript', 'shadcn/ui'],
-      highlights: ['Streaming Responses', 'Real-Time Updates', 'Production Architecture']
+      highlights: ['Streaming Responses', 'Real-Time Updates', 'Production Architecture'],
     },
     {
       icon: <Zap size={32} />,
       title: 'Model Fine-Tuning & Optimization',
-      description: 'Parameter-efficient fine-tuning with LoRA/QLoRA. Custom models for specific domains with dataset creation and evaluation.',
+      description:
+        'Parameter-efficient fine-tuning with LoRA/QLoRA. Custom models for specific domains with dataset creation and evaluation.',
       technologies: ['PyTorch', 'Hugging Face', 'LoRA/QLoRA', 'Unsloth', 'vLLM'],
-      highlights: ['Custom Model Training', 'Dataset Creation', 'Performance Optimization']
+      highlights: ['Custom Model Training', 'Dataset Creation', 'Performance Optimization'],
     },
     {
       icon: <GitBranch size={32} />,
       title: 'DevOps & AI System Monitoring',
-      description: 'CI/CD pipelines for AI models. Automated deployment, cost tracking, observability, and production monitoring for AI systems.',
+      description:
+        'CI/CD pipelines for AI models. Automated deployment, cost tracking, observability, and production monitoring for AI systems.',
       technologies: ['Docker', 'GitHub Actions', 'Prometheus', 'Redis', 'API Monitoring'],
-      highlights: ['Automated Deployment', 'Cost Tracking', 'System Observability']
-    }
+      highlights: ['Automated Deployment', 'Cost Tracking', 'System Observability'],
+    },
   ];
 
   const displayedServices = showAll ? services : services.slice(0, 3);
 
   return (
-    <section id="services" className="py-15 relative overflow-hidden">
+    <section
+      id="services"
+      className="py-15 relative overflow-hidden min-h-screen bg-gradient-to-br from-[#020617] via-[#050308] to-[#1f2937]"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/5 via-transparent to-orange-900/5"></div>
       <div className="absolute top-20 left-10 w-72 h-72 bg-[#F2B47E]/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-3 mb-6">
             <h2 className="text-5xl md:text-5xl font-bold text-[#F2B47E] relative inline-block">
-              What I <span className='text-white'>Offer</span>
+              What I <span className="text-white">Offer</span>
               <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-[#F2B47E]/30 rounded-full"></span>
             </h2>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              Production-ready <span className="text-[#F2B47E] font-semibold">AI engineering</span> services. 
-              From <span className="text-[#F2B47E] font-semibold">intelligent agents</span> to full-stack deployment.
+              Production-ready <span className="text-[#F2B47E] font-semibold">AI engineering</span>{' '}
+              services. From <span className="text-[#F2B47E] font-semibold">intelligent agents</span>{' '}
+              to full-stack deployment.
             </p>
           </div>
         </div>
@@ -95,10 +104,8 @@ export default function Services() {
                   <h3 className="text-xl font-bold text-white group-hover:text-[#F2B47E] transition-colors duration-300">
                     {service.title}
                   </h3>
-                  
-                  <p className="text-gray-400 leading-relaxed">
-                    {service.description}
-                  </p>
+
+                  <p className="text-gray-400 leading-relaxed">{service.description}</p>
 
                   {/* Highlights */}
                   <div className="space-y-2">
@@ -112,11 +119,13 @@ export default function Services() {
 
                   {/* Technologies */}
                   <div className="pt-4 border-t border-gray-800/50">
-                    <p className="text-xs text-gray-500 mb-3 uppercase tracking-wider">Technologies</p>
+                    <p className="text-xs text-gray-500 mb-3 uppercase tracking-wider">
+                      Technologies
+                    </p>
                     <div className="flex flex-wrap gap-2">
                       {service.technologies.map((tech, i) => (
-                        <span 
-                          key={i} 
+                        <span
+                          key={i}
                           className="px-3 py-1 bg-gradient-to-r from-black/60 to-gray-900/60 border border-gray-700/50 rounded-lg text-xs font-medium text-gray-300"
                         >
                           {tech}
@@ -141,15 +150,37 @@ export default function Services() {
                 {showAll ? (
                   <>
                     Show Less
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:-translate-y-1">
-                      <path d="m18 15-6-6-6 6"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="transition-transform duration-300 group-hover:-translate-y-1"
+                    >
+                      <path d="m18 15-6-6-6 6" />
                     </svg>
                   </>
                 ) : (
                   <>
                     More Services
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:translate-y-1">
-                      <path d="m6 9 6 6 6-6"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="transition-transform duration-300 group-hover:translate-y-1"
+                    >
+                      <path d="m6 9 6 6 6-6" />
                     </svg>
                   </>
                 )}
