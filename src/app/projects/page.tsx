@@ -9,7 +9,8 @@ interface Project {
   title: string;
   description: string;
   image: string;
-  liveDemo: string;
+  liveDemo?: string;
+  github?: string;
   techStack: string[];
 }
 
@@ -19,24 +20,35 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
+      title: 'Wildlife Camera AI',
+      description:
+        'Real-time AI wildlife monitoring with YOLOv8, smart alerts, Telegram bot, and interactive web dashboard. Processes 15+ FPS on edge devices.',
+      image: '/wildlife.png',
+      github: 'https://github.com/Digitalmustiii/wildlife-camera-ai',
+      techStack: ["Python", "YOLOv8", "FastAPI", "React", "SQLite", "Telegram API"],
+    },
+    {
+      id: 2,
       title: 'Lytrana AI',
       description:
         'AI-powered data insights platform for CSV analysis, instant reports, and team collaboration with mobile-ready dashboards.',
       image: '/lytrana.png',
       liveDemo: 'https://lytrana.vercel.app/',
+      github: 'https://github.com/Digitalmustiii/lytrana',
       techStack: ['Next.js', 'TypeScript', 'Gemini AI', 'Convex', 'Papaparse'],
     },
     {
-      id: 2,
+      id: 3,
       title: 'Trainetic AI',
       description:
         'Fullstack AI fitness platform generating personalized workout programs with real-time progress tracking and intelligent coaching.',
       image: '/trainetic.png',
       liveDemo: 'https://trainaticai.vercel.app/',
+      github: 'https://github.com/Digitalmustiii/trainatic-ai',
       techStack: ['Next.js', 'React', 'Typescript', 'Clerk API & Convex', 'OpenAI'],
     },
     {
-      id: 3,
+      id: 4,
       title: 'BTAML Universe',
       description:
         'Unified digital platform delivering real-time African news, business insights, scholarships, and legal resources.',
@@ -45,31 +57,24 @@ export default function Projects() {
       techStack: ['Next.js', 'Supabase', 'TypeScript', 'Tailwind CSS', 'React'],
     },
     {
-      id: 4,
+      id: 5,
       title: 'Events Display System',
       description:
         'Campus events platform showcasing academic activities with dates, locations, and visuals in a clean interface.',
       image: '/display.png',
       liveDemo: 'https://eventsdisplaysystem.vercel.app/',
+      github: 'https://github.com/Digitalmustiii/eventsdisplaysystem',
       techStack: ['React', 'TypeScript', 'Next.js', 'PostgreSQL', 'Supabase'],
     },
     {
-      id: 5,
+      id: 6,
       title: 'SkillSnap',
       description:
         'AI web tool for generating professional thumbnails with customizable themes and tech stack icons for social profiles.',
       image: '/skillsnap.png',
       liveDemo: 'https://skillsnap-livid.vercel.app/',
+      github: 'https://github.com/Digitalmustiii/skillsnap',
       techStack: ['Typescript', 'Next.js', 'Tailwind CSS', 'React Hook Form', 'Framer Motion'],
-    },
-    {
-      id: 6,
-      title: 'Authentication System',
-      description:
-        'Modern auth system with Google, GitHub, LinkedIn sign-in featuring secure sessions and responsive design.',
-      image: '/nova.png',
-      liveDemo: 'https://novaauthentication.vercel.app/',
-      techStack: ['React', 'Next.js', 'TypeScript', 'Supabase', 'Notion'],
     },
   ];
 
@@ -115,58 +120,110 @@ export default function Projects() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
-                {/* Desktop hover overlay with single CTA */}
-                <div className="hidden md:flex absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 items-center justify-center z-20">
-                  <Link
-                    href={project.liveDemo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-5 py-3 bg-[#F2B47E] text-black font-semibold rounded-lg hover:bg-[#e89b57] transition-colors duration-300 flex items-center gap-2 text-sm shadow-lg shadow-black/40"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                {/* Desktop hover overlay with CTAs */}
+                <div className="hidden md:flex absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 items-center justify-center z-20 gap-4">
+                  {project.liveDemo && (
+                    <Link
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-5 py-3 bg-[#F2B47E] text-black font-semibold rounded-lg hover:bg-[#e89b57] transition-colors duration-300 flex items-center gap-2 text-sm shadow-lg shadow-black/40"
                     >
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                    View Live
-                  </Link>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                      </svg>
+                      View Live
+                    </Link>
+                  )}
+                  {project.github && (
+                    <Link
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-5 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors duration-300 flex items-center gap-2 text-sm shadow-lg shadow-black/40"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                      </svg>
+                      View GitHub
+                    </Link>
+                  )}
                 </div>
 
-                {/* Mobile overlay – always visible CTA */}
-                <div className="md:hidden absolute inset-0 bg-black/55 flex items-center justify-center z-20">
-                  <Link
-                    href={project.liveDemo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2.5 bg-[#F2B47E] text-black font-semibold rounded-lg hover:bg-[#e89b57] transition-colors duration-300 flex items-center gap-2 text-sm shadow-lg shadow-black/40"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                {/* Mobile overlay – always visible CTAs */}
+                <div className="md:hidden absolute inset-0 bg-black/55 flex items-center justify-center z-20 gap-3 flex-wrap px-4">
+                  {project.liveDemo && (
+                    <Link
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2.5 bg-[#F2B47E] text-black font-semibold rounded-lg hover:bg-[#e89b57] transition-colors duration-300 flex items-center gap-2 text-sm shadow-lg shadow-black/40"
                     >
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                    Live Demo
-                  </Link>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                      </svg>
+                      Live Demo
+                    </Link>
+                  )}
+                  {project.github && (
+                    <Link
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2.5 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors duration-300 flex items-center gap-2 text-sm shadow-lg shadow-black/40"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                      </svg>
+                      GitHub
+                    </Link>
+                  )}
                 </div>
               </div>
 
