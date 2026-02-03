@@ -148,13 +148,24 @@ export default function Hero() {
               problems for users.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4">
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 pt-4">
+              {/* Primary */}
               <Link
-                href="#contact"
+                href="/contact"
                 className="w-full sm:w-auto px-6 lg:px-8 py-3 lg:py-3.5 bg-gradient-to-r from-[#F2B47E] to-[#e89b57] text-black font-bold rounded-lg hover:from-[#e89b57] hover:to-[#F2B47E] hover:shadow-lg hover:shadow-[#F2B47E]/20 transition-all duration-300 transform hover:translate-y-[-2px] text-center"
-                aria-label="Contact me for hiring"
+                aria-label="Get in touch"
               >
-                Hire Me
+                Let&rsquo;s Work Together
+              </Link>
+
+              {/* Secondary */}
+              <Link
+                href="/projects"
+                className="w-full sm:w-auto px-6 lg:px-8 py-3 lg:py-3.5 bg-transparent border border-gray-600 text-gray-100 font-semibold rounded-lg hover:border-[#F2B47E] hover:text-[#F2B47E] hover:shadow-md hover:shadow-[#F2B47E]/10 transition-all duration-300 transform hover:translate-y-[-2px] text-center"
+                aria-label="View my projects"
+              >
+                View My Work
               </Link>
             </div>
           </motion.div>

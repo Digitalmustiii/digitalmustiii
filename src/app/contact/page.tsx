@@ -1,156 +1,139 @@
 'use client';
 
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa6';
 import { HiMail, HiClock, HiSparkles } from 'react-icons/hi';
 
+// ─── Data ────────────────────────────────────────────────────────────────────
+
 const socialItems = [
-  { icon: <FaGithub size={32} />, href: 'https://github.com/digitalmustiii', label: 'GitHub', color: 'hover:text-gray-300' },
-  { icon: <FaLinkedin size={32} />, href: 'https://linkedin.com/in/sbmustapha', label: 'LinkedIn', color: 'hover:text-blue-400' },
-  { icon: <FaWhatsapp size={32} />, href: 'https://wa.me/+2349015015167', label: 'WhatsApp', color: 'hover:text-green-400' },
+  { icon: <FaGithub size={20} />, href: 'https://github.com/digitalmustiii', label: 'GitHub' },
+  { icon: <FaLinkedin size={20} />, href: 'https://linkedin.com/in/sbmustapha', label: 'LinkedIn' },
+  {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H1.15l8.605-9.83L0 1.154h7.595l5.243 6.932L18.9 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z" />
+      </svg>
+    ),
+    href: 'https://x.com/sir_mustiii',
+    label: 'X',
+  },
+  { icon: <FaWhatsapp size={20} />, href: 'https://wa.me/+2349015015167', label: 'WhatsApp' },
 ];
 
 const contactDetails = [
   {
-    icon: <HiMail size={28} />,
+    icon: <HiMail size={24} />,
     title: 'Email',
     value: 'sanusimustapha387@yahoo.com',
     description: 'Best for collaborations and consulting',
     href: 'mailto:sanusimustapha387@yahoo.com',
-    color: 'text-[#F2B47E]',
   },
   {
-    icon: <HiClock size={28} />,
+    icon: <HiClock size={24} />,
     title: 'Response Time',
     value: 'Within 24 hours',
     description: 'Often much faster for urgent work',
-    color: 'text-blue-400',
   },
 ];
+
+// ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function ContactPage() {
   return (
     <section
       id="contact"
-      className="py-10 min-h-screen bg-gradient-to-br from-[#020617] via-[#050308] to-[#1f2937] text-gray-200 relative overflow-hidden"
+      className="py-20 bg-zinc-950 text-zinc-200 min-h-screen"
     >
-      {/* Subtle background decorations */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-[#F2B47E]/6 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/6 rounded-full blur-3xl" />
-
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 max-w-4xl">
+        {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-black/40 backdrop-blur-sm border border-gray-800 rounded-full text-sm font-medium text-[#F2B47E] mb-4 hover:bg-black/60 transition-all duration-300">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900 border border-zinc-800 rounded-full text-sm font-medium text-[#F2B47E] mb-4">
             <HiSparkles size={16} />
             Get In Touch
           </div>
-          <h2 className="text-5xl font-bold tracking-tight mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-300 bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold tracking-tight mb-6">
             Let&apos;s{' '}
-            <span className="bg-gradient-to-r from-[#F2B47E] to-[#e89b57] bg-clip-text text-transparent">
-              Connect
-            </span>
+            <span className="text-[#F2B47E]">Connect</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
             Open to AI engineering roles, consulting, and collaborations. Share your idea, product,
             or problem space—and let&apos;s explore how AI can help.
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
-          {/* Contact Details Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            {contactDetails.map((detail, index) => (
-              <div key={index} className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#F2B47E]/20 to-[#F2B47E]/5 rounded-2xl blur-xl opacity-60 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105" />
-                <div className="relative p-8 bg-gradient-to-b from-black/70 to-black/40 backdrop-blur-md border border-gray-800/60 rounded-2xl hover:border-[#F2B47E]/40 transition-all duration-500 text-center group-hover:transform group-hover:-translate-y-1">
-                  <div
-                    className={`inline-flex p-4 bg-gradient-to-br from-black/80 to-black/50 rounded-2xl mb-6 ${detail.color} group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    {detail.icon}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-100">{detail.title}</h3>
+        {/* Contact Detail Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {contactDetails.map((detail, index) => (
+            <div
+              key={index}
+              className="group p-8 bg-zinc-900 border border-zinc-800 rounded-2xl hover:border-[#F2B47E]/30 transition-all duration-300 hover:shadow-xl hover:shadow-black/50"
+            >
+              <div className="flex items-start gap-5">
+                <div className="p-4 bg-zinc-950 border border-zinc-700 rounded-xl text-[#F2B47E] flex-shrink-0">
+                  {detail.icon}
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">{detail.title}</p>
                   {detail.href ? (
                     <a
                       href={detail.href}
-                      className="text-lg font-medium text-[#F2B47E] hover:text-[#e89b57] transition-colors duration-300 block mb-3 hover:underline"
+                      className="text-lg font-semibold text-white hover:text-[#F2B47E] transition-colors"
                     >
                       {detail.value}
                     </a>
                   ) : (
-                    <p className="text-lg font-medium text-white mb-3">{detail.value}</p>
+                    <p className="text-lg font-semibold text-white">{detail.value}</p>
                   )}
-                  <p className="text-gray-400 text-sm">{detail.description}</p>
+                  <p className="text-zinc-500 text-sm mt-2">{detail.description}</p>
                 </div>
               </div>
-            ))}
+            </div>
+          ))}
+        </div>
+
+        {/* CTA Card */}
+        <div className="relative bg-zinc-900 border border-zinc-800 rounded-3xl p-12 text-center">
+          <div className="inline-flex p-4 bg-zinc-800 rounded-2xl mb-6">
+            <HiSparkles size={28} className="text-[#F2B47E]" />
           </div>
 
-          {/* Social Media Section */}
-          <div className="text-center mb-16">
-            <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Connect on{' '}
-              <span className="bg-gradient-to-r from-[#F2B47E] to-[#e89b57] bg-clip-text text-transparent">
-                Social Media
-              </span>
-            </h3>
-            <p className="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
-              Prefer async? Reach out via GitHub, LinkedIn, or WhatsApp for updates and quick
-              contact.
-            </p>
-          </div>
+          <h3 className="text-4xl font-bold text-white mb-4">Ready to Work Together?</h3>
+          <p className="text-zinc-400 mb-10 text-lg max-w-lg mx-auto">
+            Share a brief overview of your project, timelines, and goals. You&apos;ll get a clear,
+            actionable response—not generic boilerplate.
+          </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-20">
-            {socialItems.map(({ icon, href, label, color }, index) => (
+          {/* Email CTA */}
+          <a
+            href="mailto:sanusimustapha387@yahoo.com"
+            className="inline-flex items-center gap-3 px-10 py-4 bg-[#F2B47E] hover:bg-[#e89b57] text-black font-semibold rounded-2xl transition-all duration-200 text-lg shadow-lg shadow-[#F2B47E]/20"
+          >
+            <HiMail size={22} />
+            Send Me an Email
+          </a>
+
+          {/* Social Icons */}
+          <div className="flex items-center justify-center gap-4 mt-12 pt-10 border-t border-zinc-800">
+            <span className="text-xs text-zinc-500 uppercase tracking-widest mr-4">Or find me on</span>
+            {socialItems.map(({ icon, href, label }) => (
               <Link
                 key={label}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                aria-label={label}
+                className="p-4 text-zinc-400 hover:text-[#F2B47E] hover:bg-zinc-800 border border-transparent hover:border-zinc-700 rounded-2xl transition-all duration-200"
               >
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#F2B47E]/15 to-[#F2B47E]/5 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110" />
-                <div
-                  className={`relative p-8 bg-gradient-to-b from-black/60 to-black/30 backdrop-blur-md border border-gray-800/60 rounded-2xl text-gray-200 ${color} transition-all duration-500 hover:scale-[1.05] hover:shadow-xl hover:shadow-[#F2B47E]/10 hover:border-[#F2B47E]/40 text-center group-hover:transform group-hover:-translate-y-2`}
-                >
-                  <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    {icon}
-                  </div>
-                  <h4 className="font-bold text-lg mb-2 group-hover:text-white transition-colors duration-300">
-                    {label}
-                  </h4>
-                  <div className="w-8 h-0.5 bg-gradient-to-r from-[#F2B47E]/60 to-transparent mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
+                {icon}
               </Link>
             ))}
-          </div>
-
-          {/* Call to Action */}
-          <div className="text-center">
-            <div className="relative inline-block">
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#F2B47E]/20 via-[#F2B47E]/10 to-[#F2B47E]/20 rounded-2xl blur-2xl animate-pulse" />
-              <div className="relative p-10 bg-gradient-to-br from-black/70 via-black/60 to-black/70 backdrop-blur-lg border border-gray-800/60 rounded-2xl max-w-2xl mx-auto hover:border-[#F2B47E]/30 transition-all duration-500">
-                <div className="flex justify-center mb-4">
-                  <div className="p-3 bg-gradient-to-br from-[#F2B47E]/20 to-[#F2B47E]/10 rounded-full">
-                    <HiSparkles size={24} className="text-[#F2B47E]" />
-                  </div>
-                </div>
-                <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
-                  Ready to Work Together?
-                </h3>
-                <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-                  Share a brief overview of your project, timelines, and goals. You&apos;ll get a
-                  clear, actionable response—not generic boilerplate.
-                </p>
-                <a
-                  href="mailto:sanusimustapha387@yahoo.com"
-                  className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#F2B47E] via-[#F2B47E] to-[#e89b57] text-black font-bold text-lg rounded-xl hover:from-[#e89b57] hover:to-[#F2B47E] transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#F2B47E]/30 active:scale-95"
-                >
-                  <HiMail size={22} />
-                  Get In Touch
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>

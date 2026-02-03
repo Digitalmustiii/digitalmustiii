@@ -52,78 +52,36 @@ export default function AboutPage() {
     []
   );
 
-  const allSkills: string[] = useMemo(
-    () => [
-      // Core Languages
-      'Python',
-      'TypeScript',
-      'Node.js',
-
-      // LLM & AI
-      'OpenAI API',
-      'Anthropic Claude',
-      'DeepSeek',
-      'Tool/Function Calling',
-      'LlamaIndex',
-      'RAG Systems',
-      'Prompt Engineering',
-      'Structured Outputs',
-
-      // ML & Deep Learning
-      'PyTorch',
-      'TensorFlow',
-      'Hugging Face',
-      'Fine-tuning (LoRA/QLoRA)',
-
-      // AI Agents
-      'OpenAI Assistants',
-      'AutoGen',
-      'CrewAI',
-      'Multi-Agent Systems',
-
-      // Edge & Optimization
-      'ONNX Runtime',
-      'TensorRT',
-      'Model Quantization',
-      'On-Device Inference',
-      'OLLAMA',
-      'llama.cpp',
-      'Edge Deployment',
-
-      // Backend & Databases
-      'PostgreSQL',
-      'Supabase',
-      'pgvector',
-      'Redis',
-      'REST APIs',
-
-      // Frontend & Full-Stack
-      'Next.js 14+',
-      'React',
-      'Vercel AI SDK',
-      'Real-time Systems',
-      'shadcn/ui',
-
-      // DevOps & Deployment
-      'Docker',
-      'CI/CD',
-      'GitHub Actions',
-      'Git',
-      'Monitoring & Observability',
-    ],
-    []
-  );
-
   const engineeringSkills: SkillItem[] = useMemo(
     () => [
       { skill: 'LLM Integration & Tool Calling', level: 92 },
       { skill: 'RAG Systems & Vector Search', level: 88 },
       { skill: 'AI Agent Development', level: 90 },
       { skill: 'On-Device & Edge AI', level: 85 },
-      { skill: 'Production Full-Stack (Next.js + AI)', level: 88 },
-      { skill: 'Model Optimization & Quantization', level: 82 },
-      { skill: 'DevOps for AI Systems', level: 85 },
-      { skill: 'Real-time AI Applications', level: 87 },
+      { skill: 'Full-Stack AI (Next.js + APIs)', level: 88 },
+      { skill: 'Model Optimization & Deployment', level: 82 },
+    ],
+    []
+  );
+
+  const techStack = useMemo(
+    () => [
+      {
+        category: 'AI & LLMs',
+        tags: ['OpenAI API', 'Anthropic Claude', 'LlamaIndex', 'RAG', 'Tool Calling', 'Fine-tuning'],
+      },
+      {
+        category: 'Languages & Frameworks',
+        tags: ['Python', 'TypeScript', 'React', 'Next.js', 'Node.js'],
+      },
+      {
+        category: 'Backend & Data',
+        tags: ['PostgreSQL', 'pgvector', 'Supabase', 'Redis', 'REST APIs'],
+      },
+      {
+        category: 'DevOps & Edge',
+        tags: ['Docker', 'GitHub Actions', 'ONNX Runtime', 'OLLAMA', 'Edge Deployment'],
+      },
     ],
     []
   );
@@ -248,32 +206,40 @@ export default function AboutPage() {
             <div className="p-6 md:p-8">
               {/* Skills Tab */}
               {activeTab === 'skills' && (
-                <div id="skills-panel" role="tabpanel" className="space-y-10 animate-fadeIn">
-                  {/* Technical Skills */}
+                <div id="skills-panel" role="tabpanel" className="animate-fadeIn space-y-10">
+                  {/* Progress Bars */}
                   <div>
-                    <h4 className="text-2xl font-bold mb-6 text-white flex items-center gap-3">
-                      Technical Skills
-                    </h4>
-                    <div className="flex flex-wrap gap-2 md:gap-3">
-                      {allSkills.map((skill) => (
-                        <span
-                          key={skill}
-                          className="px-3 py-2 md:px-4 md:py-2 bg-gradient-to-r from-black/60 to-gray-900/60 border border-gray-700/50 rounded-xl text-xs md:text-sm font-medium text-gray-200 backdrop-blur-sm hover:border-[#F2B47E]/50 hover:bg-gradient-to-r hover:from-[#F2B47E]/10 hover:to-orange-500/10 transition-all duration-300"
-                        >
-                          {skill}
-                        </span>
+                    <h4 className="text-xl font-bold mb-6 text-white">Core Competencies</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      {engineeringSkills.map((item, index) => (
+                        <ProgressBar key={index} skill={item.skill} level={item.level} />
                       ))}
                     </div>
                   </div>
 
-                  {/* Engineering Skills */}
+                  {/* Divider */}
+                  <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-700/60 to-transparent" />
+
+                  {/* Grouped Tech Tags */}
                   <div>
-                    <h4 className="text-2xl font-bold mb-6 text-white flex items-center gap-3">
-                      Engineering Excellence
-                    </h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {engineeringSkills.map((item, index) => (
-                        <ProgressBar key={index} skill={item.skill} level={item.level} />
+                    <h4 className="text-xl font-bold mb-6 text-white">Tech Stack</h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      {techStack.map((group) => (
+                        <div key={group.category}>
+                          <span className="text-xs font-semibold uppercase tracking-widest text-[#F2B47E]/70 mb-3 block">
+                            {group.category}
+                          </span>
+                          <div className="flex flex-wrap gap-2">
+                            {group.tags.map((tag) => (
+                              <span
+                                key={tag}
+                                className="px-3 py-1.5 bg-black/50 border border-gray-700/50 rounded-lg text-sm text-gray-300 hover:border-[#F2B47E]/40 hover:text-[#F2B47E] transition-all duration-200"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
                       ))}
                     </div>
                   </div>
