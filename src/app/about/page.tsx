@@ -46,7 +46,7 @@ export default function AboutPage() {
         company: 'Btaml Universe',
         period: 'Nov 2022 - Present',
         type: 'Full-time',
-        achievements: ['Led technical architecture', 'Built systems for 10k+ users'],
+        achievements: ['Led technical architecture', 'Built systems for a lot of users'],
       },
     ],
     []
@@ -68,19 +68,19 @@ export default function AboutPage() {
     () => [
       {
         category: 'AI & LLMs',
-        tags: ['→ OpenAI, Anthropic, LlamaIndex, Tool Calling, Fine-tuning'],
+        tags: ['OpenAI', 'Anthropic', 'LlamaIndex', 'Tool Calling', 'Fine-tuning'],
       },
       {
         category: 'Languages & Frameworks',
-        tags: ['Python, TypeScript, React, Next.js, Node.js'],
+        tags: ['Python', 'TypeScript', 'React', 'Next.js', 'Node.js'],
       },
       {
         category: 'Backend & Data',
-        tags: ['PostgreSQL', 'pgvector', 'Supabase', 'Redis', 'REST APIs'],
+        tags: ['PostgreSQL', 'pgvector', 'Supabase', 'Redis'],
       },
       {
         category: 'DevOps & Edge',
-        tags: ['Docker', 'GitHub Actions', 'ONNX Runtime', 'OLLAMA', 'Edge Deployment'],
+        tags: ['Docker', 'GitHub Actions', 'ONNX Runtime', 'Ollama', 'llama.cpp'],
       },
     ],
     []
@@ -162,11 +162,18 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto space-y-4">
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              I build <span className="text-[#F2B47E] font-semibold">production AI systems</span> that
-              solve real problems. From <span className="text-[#F2B47E] font-semibold">intelligent agents</span> to
-              edge deployment.
+              I’m a software engineer who transitioned from full-stack development into production AI engineering.
+            </p>
+            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+              My BSc was in Software Engineering.
+            </p>
+            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+              My MSc is AI-focused, and I’m currently in the Embodied Intelligence lab (MLLM / VLA / VLN) working on multimodal agents, cross-modal RAG, and autonomous scenarios.
+            </p>
+            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+              I still love clean software engineering principles. That’s why I specialize in using powerful models to build scalable, observable products.
             </p>
           </div>
         </div>
@@ -286,14 +293,14 @@ export default function AboutPage() {
                             </div>
                           </div>
                           <h4 className="text-xl font-bold text-white mb-2">
-                            MSc in Computer Science and Engineering
+                            MSc in Computer Science (AI Focus)
                           </h4>
                           <p className="text-lg text-gray-300 mb-1">
                             University of Electronic Science and Technology of China (UESTC)
                           </p>
                           <p className="text-gray-400 mb-2">Chengdu, China</p>
                           <p className="text-sm text-[#F2B47E]/80 font-medium">
-                            Research Focus: Artificial Intelligence
+                            Research Focus: Embodied Intelligence lab (MLLM / VLA / VLN), multimodal agents, cross-modal RAG, autonomous scenarios
                           </p>
                         </div>
                       </div>
