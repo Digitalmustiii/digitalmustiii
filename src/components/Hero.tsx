@@ -139,13 +139,10 @@ export default function Hero() {
 
             <p className="text-gray-300 text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl">
               I am a Software Engineer and MSc candidate in Computer Science specializing in AI
-              systems and intelligent applications. I build and ship production AI systems end to
-              end, from intelligent agents and RAG pipelines to on-device and edge deployments. My
-              work spans Python, TypeScript, React, and Next.js, integrating LLMs, tool/function
-              calling, and vector search into real products with solid backend services, real-time
-              interfaces, and DevOps for AI. I focus on reliable, observable AI in production—
-              optimizing models, deploying to cloud and edge, and wiring systems that solve concrete
-              problems for users.
+              systems and intelligent applications. I build and ship production AI systems end-to-end — intelligent agents, RAG pipelines, real-time interfaces, and edge deployments.  
+Python · TypeScript · React · Next.js · LLMs · Tool Calling · Vector Search · AI DevOps
+
+I focus on reliable, observable AI that solves real user problems.
             </p>
 
             {/* CTA Buttons */}

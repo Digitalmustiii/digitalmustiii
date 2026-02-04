@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Code, Brain, Cpu, Database, Zap, GitBranch } from 'lucide-react';
+import { Code, Brain, Cpu, Database, Zap } from 'lucide-react';
 
 export default function Services() {
   const [showAll, setShowAll] = useState(false);
@@ -10,49 +10,36 @@ export default function Services() {
       icon: <Brain size={32} />,
       title: 'LLM Integration & AI Agents',
       description:
-        'Build production-ready AI agents with tool calling, function execution, and multi-step reasoning. OpenAI, Claude, DeepSeek integration with intelligent workflows.',
-      technologies: ['OpenAI API', 'Anthropic Claude', 'Tool Calling', 'AutoGen', 'CrewAI'],
-      highlights: ['Function/Tool Calling', 'Multi-Agent Systems', 'Autonomous Workflows'],
+        'Production-ready agents with tool calling, multi-step reasoning, and multi-agent workflows.',
+      technologies: ['OpenAI', 'Claude', 'AutoGen', 'CrewAI'],
     },
     {
       icon: <Database size={32} />,
       title: 'RAG Systems & Vector Search',
       description:
-        'Advanced Retrieval-Augmented Generation with semantic search, hybrid retrieval, and citation tracking. Production-ready knowledge bases.',
-      technologies: ['LlamaIndex', 'pgvector', 'Supabase', 'OpenAI Embeddings', 'Pinecone'],
-      highlights: ['Semantic Search', 'Hybrid Retrieval', 'Citation Tracking'],
+        'Semantic + hybrid retrieval, citation tracking, production knowledge bases.',
+      technologies: ['LlamaIndex', 'pgvector', 'Supabase', 'Pinecone'],
     },
     {
       icon: <Cpu size={32} />,
       title: 'Edge & On-Device AI',
       description:
-        'Deploy optimized AI models on edge devices and hardware-constrained environments. Model quantization, ONNX conversion, and real-time inference.',
-      technologies: ['ONNX Runtime', 'TensorRT', 'OLLAMA', 'llama.cpp', 'Quantization'],
-      highlights: ['Real-Time Inference', 'Model Optimization', 'Edge Deployment'],
+        'Quantized models, real-time inference on constrained hardware.',
+      technologies: ['ONNX Runtime', 'TensorRT', 'Ollama', 'llama.cpp'],
     },
     {
       icon: <Code size={32} />,
       title: 'Full-Stack AI Applications',
       description:
-        'Modern Next.js applications with streaming AI responses, real-time updates, and production-grade architecture. Server Actions and React Server Components.',
-      technologies: ['Next.js 14+', 'Vercel AI SDK', 'React', 'TypeScript', 'shadcn/ui'],
-      highlights: ['Streaming Responses', 'Real-Time Updates', 'Production Architecture'],
+        'Streaming AI apps with Next.js 14, Vercel AI SDK, Server Actions, shadcn/ui.',
+      technologies: ['Next.js 14', 'Vercel AI SDK', 'Server Actions', 'shadcn/ui'],
     },
     {
       icon: <Zap size={32} />,
-      title: 'Model Fine-Tuning & Optimization',
+      title: 'Model Optimization & DevOps for AI',
       description:
-        'Parameter-efficient fine-tuning with LoRA/QLoRA. Custom models for specific domains with dataset creation and evaluation.',
-      technologies: ['PyTorch', 'Hugging Face', 'LoRA/QLoRA', 'Unsloth', 'vLLM'],
-      highlights: ['Custom Model Training', 'Dataset Creation', 'Performance Optimization'],
-    },
-    {
-      icon: <GitBranch size={32} />,
-      title: 'DevOps & AI System Monitoring',
-      description:
-        'CI/CD pipelines for AI models. Automated deployment, cost tracking, observability, and production monitoring for AI systems.',
-      technologies: ['Docker', 'GitHub Actions', 'Prometheus', 'Redis', 'API Monitoring'],
-      highlights: ['Automated Deployment', 'Cost Tracking', 'System Observability'],
+        'LoRA/QLoRA fine-tuning, CI/CD for models, cost tracking, observability.',
+      technologies: ['Docker', 'Prometheus', 'vLLM'],
     },
   ];
 
@@ -106,16 +93,6 @@ export default function Services() {
                   </h3>
 
                   <p className="text-gray-400 leading-relaxed">{service.description}</p>
-
-                  {/* Highlights */}
-                  <div className="space-y-2">
-                    {service.highlights.map((highlight, i) => (
-                      <div key={i} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#F2B47E]"></div>
-                        <span className="text-gray-300 text-sm">{highlight}</span>
-                      </div>
-                    ))}
-                  </div>
 
                   {/* Technologies */}
                   <div className="pt-4 border-t border-gray-800/50">

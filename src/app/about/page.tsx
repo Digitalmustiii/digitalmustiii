@@ -68,11 +68,11 @@ export default function AboutPage() {
     () => [
       {
         category: 'AI & LLMs',
-        tags: ['OpenAI API', 'Anthropic Claude', 'LlamaIndex', 'RAG', 'Tool Calling', 'Fine-tuning'],
+        tags: ['→ OpenAI, Anthropic, LlamaIndex, Tool Calling, Fine-tuning'],
       },
       {
         category: 'Languages & Frameworks',
-        tags: ['Python', 'TypeScript', 'React', 'Next.js', 'Node.js'],
+        tags: ['Python, TypeScript, React, Next.js, Node.js'],
       },
       {
         category: 'Backend & Data',
